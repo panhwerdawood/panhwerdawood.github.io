@@ -476,6 +476,7 @@ a:hover {
   padding-bottom: 15px;
 }
 
+
 .navbar-b.navbar-reduce .nav-link {
   color: #0078ff;
 }
@@ -816,6 +817,7 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+
 }
 
 .work-img img {
@@ -824,6 +826,7 @@ a:hover {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+
 }
 
 .work-content .w-more {
@@ -831,11 +834,13 @@ a:hover {
   font-size: .8rem;
   align-items: center;
 
+
 }
 
 .work-content .w-more .w-ctegory {
   color: #0078ff;
   text-align: center;
+
 
 }
 
@@ -843,6 +848,7 @@ a:hover {
   font-size: 2.5rem;
   color: #0078ff;
   float: right;
+
 }
 
 .work-content .w-like a {
@@ -851,6 +857,7 @@ a:hover {
 
 .work-content .w-like .num-like {
   font-size: .7rem;
+
 }
 
 .w-title {
@@ -1101,14 +1108,13 @@ footer .credits a {
 }
 
 .button-big {
-  padding: .9rem 2.3rem;
+  padding: .4rem 2.3rem;
   font-size: 1.2rem;
 }
 
 .button-rouded {
   border-radius: 5rem;
 }
-
 .btn-lg {
   padding: .5rem 1rem;
   font-size: 1.25rem;
