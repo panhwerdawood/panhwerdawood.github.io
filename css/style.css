@@ -4,7 +4,7 @@
 ======================================*/
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ebf5fc;
   color: #4e4e4e;
 }
 
@@ -151,7 +151,7 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 100px;
   height: 5px;
   background-color: #0078ff;
   margin: 0 auto;
@@ -186,10 +186,13 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: #ebf5fc;
   margin-bottom: 3rem;
   z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  margin-bottom: 3rem;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
 }
 
 /*------/ Socials /------*/
@@ -224,28 +227,12 @@ a:hover {
 }
 
 .iconify{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  font-size: 1.7rem;
-  border-radius: 50%;
-  line-height: 1.4;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
-  transition: all 300ms ease;
-  margin-bottom: 13px;
-
+  margin-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-size: 50px;
 }
-.iconify:hover {
-  background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
-  font-size: 10px;
-  width: 50px;
-  height: 50px;
-}
-
 /*------/ Ul resect /------*/
 
 .ul-resect,
@@ -560,6 +547,13 @@ a:hover {
 .navbar-b .dropdown-menu .dropdown-item.active {
   background-color: #0078ff;
 }
+.navbar5 ul li.dropdown ul{
+  position: absolute;
+  left: 0;
+  padding-left: 0;
+  display: none;
+}
+
 
 /*--/ Hamburger Navbar /--*/
 
@@ -660,6 +654,7 @@ a:hover {
 
 .intro-single {
   height: 350px;
+  
 }
 
 .intro-single .intro-content {
@@ -695,6 +690,7 @@ a:hover {
 .about-mf .box-shadow-full {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  font-weight: 400;
 }
 
 .skills {
@@ -725,6 +721,7 @@ a:hover {
 
 .skill-mf span {
   color: #4e4e4e;
+  font-weight: 500;
 }
 
 .skill-mf .progress {
@@ -733,12 +730,17 @@ a:hover {
   border-radius: 10px;
   height: .7rem;
   border-radius: 50px;
+
 }
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
   background-color: #0078ff;
   border-radius: 50px;
+
+}
+.lead{
+  font-weight: 350;
 }
 
 
@@ -747,16 +749,17 @@ a:hover {
 ======================================*/
 
 .service-box {
-  background-color: #fff;
+  background-color: #ebf5fc;
   padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
+  border-radius: 40px;
   margin-bottom: 3rem;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
 }
 .service-box:hover{
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- border-radius: 30px;
- transition: all 300ms ease;
- cursor: pointer;
+          box-shadow: inset -6px -6px 20px rgba(0,0,0,0.05),
+                      inset 6px 6px 20px rgba(0,0,0,0.15);
+
 
 
 }
@@ -766,7 +769,17 @@ a:hover {
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
+
 }
+.service-box:hover .ico-circle{
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+
 
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -787,6 +800,41 @@ a:hover {
 
 .service-box .s-description {
   color: #4e4e4e;
+}
+/***********GCP Starts***********/
+.gcp-box{
+  background-color: #ebf5fc;
+  padding: 2.5rem 1.3rem;
+  border-radius: 40px;
+  margin-bottom: 3rem;
+  box-shadow: -6px -6px 20px rgba(255,255,255,1),
+                6px 6px 20px rgba(0,0,0,0.1);
+}
+.gcp-box:hover{
+  box-shadow: 1px 1px 10px #888888;
+  transition: 300ms ease-in;
+}
+.gcp-box:active{
+  box-shadow: inset -6px -6px 20px rgba(0,0,0,0.05),
+              inset 6px 6px 20px rgba(0,0,0,0.15);
+}
+.gcp-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+}
+
+.gcp-box .s-description {
+  color: #4e4e4e;
+}
+.gcp-box:hover .service-ico{ 
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
 }
 
 /*======================================
@@ -822,25 +870,30 @@ a:hover {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: #fff;
+  background-color: #f4eded;
+  border-radius: 10px;
+  box-shadow: -6px -6px 20px rgba(0,0,0,0.15),
+                6px 6px 20px rgba(0,0,0,0.15);
+
 
 }
 .work-box:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 30px;
-  transition: all 400ms ease-in-out;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out; 
 }
 
 .work-box:hover img {
   -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  border-bottom: 35px solid #0078ff;
+  transform: scale(1.09);
+  
 }
 
 .work-img {
   display: block;
   overflow: hidden;
-
+  transform: scale(0.95);
+  border-radius: 10px;
+ 
 }
 
 .work-img img {
@@ -998,7 +1051,7 @@ a:hover {
 
 .sidebar-search input {
   background-color: #fff;
-  border-radius: 0;
+  border-radius: 50px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -1032,6 +1085,15 @@ a:hover {
 
 .contact-mf {
   margin-top: 4rem;
+}
+.box-shadow-full2{
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #ebf5fc;
+  margin-bottom: 3rem;
+  z-index: 2;
+  border-radius: 20px;
+  margin-bottom: 3rem;
 }
 
 /*======================================
@@ -1093,13 +1155,12 @@ footer .credits a {
   font-weight: 400;
   font-size: 13px;
 }
-
 /*======================================
 //--//-->   BUTTON
 ======================================*/
 
 .button {
-  display: inline-block;
+  display: block;
   padding: .3rem .6rem;
   text-align: center;
   vertical-align: middle;
@@ -1107,7 +1168,7 @@ footer .credits a {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 1rem;
+  font-size: 2rem;
   border-radius: .3rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
@@ -1131,12 +1192,12 @@ footer .credits a {
 }
 
 .button-big {
-  padding: .4rem 2.3rem;
+  padding: .5rem 1.3rem;
   font-size: 1.2rem;
 }
 
 .button-rouded {
-  border-radius: 5rem;
+  border-radius: 2rem;
 }
 .btn-lg {
   padding: .5rem 1rem;
@@ -1144,7 +1205,50 @@ footer .credits a {
   line-height: 1.5;
   border-radius: .3rem;
 }
-
+.button-b{
+  background-color: #0078ff;
+  color: #fff;
+  border-color: #cde1f8;
+  margin-top: 10px;
+}
+#btn1{
+  margin-left: 20px;
+}
+#btn2{
+  margin-left: 5px;
+}
+.button-rouded2{
+  border-radius: 6px;
+}
+.button2{
+  display: inline-block;
+  padding: .2rem .9rem;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+.button2:focus {
+  outline: 0;
+}
+.button2:hover {
+  background-color: #0062d3;
+  color: #fff;
+  transition: all 500ms ease;
+}
+.js-title {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
